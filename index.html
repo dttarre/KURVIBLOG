@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!-- Usando HTML5 -->
+<html lang="es">
+
+<head>
+    <!-- Configuración y metadatos -->
+
+    <!-- Permite utilizar caracteres del idioma español -->
+    <meta charset="UTF-8">
+
+    <!-- Adaptación a dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la pestaña del navegador -->
+    <title>KurviBlog - Blog de motociclismo</title>
+
+    <!-- Vinculación con la hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>KurviBlog</h1>
+
+        <p>El blog de los moteros, compartir experiencias y tips para otros moteros</p>
+        <!-- Menú de navegación -->
+        <nav>
+            <!-- <ul>lista no ordenada -->
+            <ul>
+                <!-- li define cada elemento de la lista -->
+                <!-- crear hipervínculo -->
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#entradas">Entradas</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <!-- # navegar hacia ese elemento dentro del mismo doc HTML -->
+            </ul>
+        </nav>
+
+    </header>
+    <!-- Contenido principal del blog -->
+    <main>
+        <section id="inicio">
+
+            <h2>Bienvenidos a KurviBlog</h2>
+            <p>
+                Un espacio dedicado a los amantes de las motos, donde compartir experiencias,
+                consejos de conducción, equipación motera y rutas sobre dos ruedas.
+            </p>
+            <!-- insertar imagen y alt una descripción alternativa de la imagen -->
+            <img src="Images/portada.jpeg" alt="moto en una carretera de montaña">
+            <a href="#entradas">Mira nuestras publicaciones</a>
+
+        </section>
+
+        <section id="entradas">
+            <h2>Últimas publicaciones</h2>
+            <!-- Filtro de publicaciones por categorías para javascript -->
+            <div id="filtros">
+                <button class="active" data-category="todas">Todas</button>
+                <button data-category="motos">Motocicletas</button>
+                <button data-category="equipamiento">Equipamiento</button>
+                <button data-category="rutas">Rutas</button>
+            </div>
+
+            <!-- Presentación de la primera entrada -->
+            <article data-category="motos">
+                <h3>Mi experiencia con la BMW F800GS</h3>
+                <img src="Images/bmw.png" alt="BMW F800GS">
+                <p>
+                    Mi experiencia personal con la conducción de la BMW F800GS,
+                    una moto trail para el dia a dia y rutas.
+                </p>
+                <a href="entradas/bmw.html">Leer más</a>
+            </article>
+
+            <article data-category="equipamiento">
+                <h3>Mi equipación de motorista</h3>
+                <img src="Images/equipacion.jpeg" alt="Mi equipación de motorista">
+                <p>
+                    Descubre mi equipación del dia a dia.
+                </p>
+                <a href="entradas/equipamiento.html">Leer más</a>
+            </article>
+
+            <article data-category="rutas">
+                <h3>Mi ruta de domingo</h3>
+                <img src="Images/ruta.jpeg" alt="Mi ruta de domingo">
+                <p>
+                    Descubre mi última ruta del domingo.
+                </p>
+                <a href="entradas/rutas.html">Leer más</a>
+            </article>
+
+        </section>
+        <!-- Sección sobre mi -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+
+            <p>
+                Me gustan las motos pero tampoco es que sea un experto, pero he
+                escogido este tema para hacer el blog del trabajo de la asignatura.
+            </p>
+
+            <p>
+                He creado KurviBlog para aprobar la practica de la asignatura y para
+                aprender a crear un blog como mi primera experiencia en el mundo del desarrollo web.
+            </p>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 KurviBlog. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Vinculación con JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

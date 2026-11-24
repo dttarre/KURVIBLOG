@@ -1,0 +1,252 @@
+/* Estilos generales del blog cambia la manera de hacer el comentario */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    color: #20252B;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilos de la cabecera */
+
+header {
+    background-color: #20252B;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    color: #E88735;
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+/* Estilos del menú de navegación */
+#filtros button.activo {
+    background-color: #E88735;
+    color: #20252B;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #E88735;
+}
+
+/* Estilos del contenido principal */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Estilos generales de las imágenes */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Sección de bienvenida */
+
+#inicio {
+    text-align: center;
+}
+
+#inicio img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Distribución de las publicaciones */
+
+#entradas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+#entradas h2 {
+    grid-column: 1 / -1;
+}
+
+/* Filtro de publicaciones */
+
+#filtros {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#filtros button {
+    background-color: #20252B;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#filtros button:hover {
+    background-color: #E88735;
+    color: #20252B;
+}
+
+/* Enlaces de las publicaciones */
+
+#entradas article {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#entradas article a {
+    display: inline-block;
+    background-color: #E88735;
+    color: #20252B;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#entradas article a:hover {
+    background-color: #20252B;
+    color: #FFFFFF;
+}
+
+/* Diseño responsive para tabletas */
+
+@media (max-width: 900px) {
+    #entradas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Diseño responsive para móviles */
+
+@media (max-width: 600px) {
+    #entradas {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    #inicio img {
+        max-height: 250px;
+    }
+}
+
+/* Diseño de las publicaciones individuales */
+
+main>article {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main>article img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+main>article h3 {
+    color: #20252B;
+    border-bottom: 2px solid #E88735;
+    padding-bottom: 5px;
+}
+
+/* Enlaces de navegación del contenido */
+
+#inicio a,
+main>article a {
+    display: inline-block;
+    background-color: #E88735;
+    color: #20252B;
+    padding: 10px 18px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#inicio a:hover,
+main>article a:hover {
+    background-color: #20252B;
+    color: #FFFFFF;
+}
+
+/* Sección Sobre mí */
+
+#sobre-mi {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #E88735;
+}
+
+#sobre-mi h2 {
+    margin-top: 0;
+}
+
+/* Pie de página */
+
+footer {
+    background-color: #20252B;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
