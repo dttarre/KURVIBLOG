@@ -174,10 +174,6 @@ img {
     main {
         padding: 15px;
     }
-
-    #inicio img {
-        max-height: 250px;
-    }
 }
 
 /* Diseño de las publicaciones individuales */
